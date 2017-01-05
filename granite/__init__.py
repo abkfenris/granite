@@ -11,6 +11,7 @@ from webassets.loaders import PythonLoader as PythonAssetsLoader
 from granite.controllers.main import main
 from granite import assets
 from granite.models import db
+from granite.admin import admin
 
 from granite.extensions import (
     cache,
@@ -36,6 +37,8 @@ def create_app(object_name):
 
     app.config.from_object(object_name)
 
+    admin.init_app(app)
+    
     # initialize the cache
     cache.init_app(app)
 

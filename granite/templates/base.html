@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
+
         {% block meta %}
             <meta name="description" content="">
             <meta name="author" content="">
@@ -36,7 +36,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url_for('.home') }}">Home</a></li>
 
-                    {% if not current_user.is_authenticated() %}
+                    {% if not current_user.is_authenticated %}
                         <li><a href="{{ url_for('.login') }}">Login</a></li>
                     {% else %}
                         <li><a href="{{ url_for('.logout') }}">Logout</a></li>
@@ -66,7 +66,7 @@
         {% assets "common_js" %}
             <script type="text/javascript" src="{{ ASSET_URL }}"></script>
         {% endassets %}
-        
+
         {% block js %}
         {% endblock %}
     </body>
