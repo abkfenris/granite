@@ -1,4 +1,5 @@
 #Flask Foundation
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f516c019d577465588f78a0ac94cae97)](https://www.codacy.com/app/abk/granite?utm_source=github.com&utm_medium=referral&utm_content=abkfenris/granite&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/JackStouffer/Flask-Foundation.png)](https://travis-ci.org/JackStouffer/Flask-Foundation)
 
 Documentation is located at [https://jackstouffer.github.io/Flask-Foundation/](https://jackstouffer.github.io/Flask-Foundation/)
